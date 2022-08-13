@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>999</width>
+    <height>658</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Smart Bin Application</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: qlineargradient(spread:pad, x1:0.453, y1:0.0284091, x2:0.458, y2:1, stop:0 rgba(29, 213, 56, 255), stop:1 rgba(255, 255, 255, 255));
+
+}</string>
+  </property>
+  <widget class="PlotWidget" name="graphwidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>120</y>
+     <width>591</width>
+     <height>431</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">pyqtgraph</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
